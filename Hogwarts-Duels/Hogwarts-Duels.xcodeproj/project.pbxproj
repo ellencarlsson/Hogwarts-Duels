@@ -16,6 +16,10 @@
 		C10C09AF2D208CB10046306D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10C09AE2D208CB10046306D /* ContentView.swift */; };
 		C10C09B12D208CB20046306D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C10C09B02D208CB20046306D /* Assets.xcassets */; };
 		C10C09B42D208CB20046306D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C10C09B32D208CB20046306D /* Preview Assets.xcassets */; };
+		C15FB8682D208D830079E469 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15FB8672D208D830079E469 /* StartView.swift */; };
+		C15FB86A2D20A1B70079E469 /* uncanny.otf in Resources */ = {isa = PBXBuildFile; fileRef = C15FB8692D20A1B70079E469 /* uncanny.otf */; };
+		C15FB86E2D20A5160079E469 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15FB86D2D20A5160079E469 /* Buttons.swift */; };
+		C15FB8702D20A59E0079E469 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15FB86F2D20A59E0079E469 /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,11 @@
 		C10C09AE2D208CB10046306D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C10C09B02D208CB20046306D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C10C09B32D208CB20046306D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C15FB8672D208D830079E469 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		C15FB8692D20A1B70079E469 /* uncanny.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = uncanny.otf; sourceTree = "<group>"; };
+		C15FB86B2D20A25B0079E469 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C15FB86D2D20A5160079E469 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+		C15FB86F2D20A59E0079E469 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +103,10 @@
 		C10C09992D208CAF0046306D /* Hogwarts-Duels */ = {
 			isa = PBXGroup;
 			children = (
+				C15FB86B2D20A25B0079E469 /* Info.plist */,
+				C15FB8692D20A1B70079E469 /* uncanny.otf */,
+				C15FB8662D208D730079E469 /* Views */,
 				C10C099A2D208CAF0046306D /* Hogwarts_DuelsApp.swift */,
-				C10C099C2D208CAF0046306D /* ContentView.swift */,
 				C10C099E2D208CB00046306D /* Assets.xcassets */,
 				C10C09A02D208CB00046306D /* Preview Content */,
 			);
@@ -127,6 +138,17 @@
 				C10C09B32D208CB20046306D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C15FB8662D208D730079E469 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C10C099C2D208CAF0046306D /* ContentView.swift */,
+				C15FB8672D208D830079E469 /* StartView.swift */,
+				C15FB86D2D20A5160079E469 /* Buttons.swift */,
+				C15FB86F2D20A59E0079E469 /* Colors.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +234,7 @@
 			files = (
 				C10C09A22D208CB00046306D /* Preview Assets.xcassets in Resources */,
 				C10C099F2D208CB00046306D /* Assets.xcassets in Resources */,
+				C15FB86A2D20A1B70079E469 /* uncanny.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,8 +254,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C15FB8682D208D830079E469 /* StartView.swift in Sources */,
+				C15FB8702D20A59E0079E469 /* Colors.swift in Sources */,
 				C10C099D2D208CAF0046306D /* ContentView.swift in Sources */,
 				C10C099B2D208CAF0046306D /* Hogwarts_DuelsApp.swift in Sources */,
+				C15FB86E2D20A5160079E469 /* Buttons.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +469,7 @@
 				DEVELOPMENT_TEAM = 273MNK89UR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Hogwarts-Duels/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Hogwarts-Duels";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -476,6 +503,7 @@
 				DEVELOPMENT_TEAM = 273MNK89UR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Hogwarts-Duels/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Hogwarts-Duels";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
