@@ -18,7 +18,6 @@ struct SpellDetailView: View {
                     .frame(width: 300, height: 300)
                 Text("Expelliarmus")
                     .font(.custom("uncanny", size: 60))
-                    .font(.largeTitle)
                     .bold()
                     .foregroundColor(.red)
             }
