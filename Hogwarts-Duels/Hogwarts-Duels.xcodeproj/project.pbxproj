@@ -23,6 +23,7 @@
 		C15FB86E2D20A5160079E469 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15FB86D2D20A5160079E469 /* Buttons.swift */; };
 		C15FB8702D20A59E0079E469 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15FB86F2D20A59E0079E469 /* Colors.swift */; };
 		C15FB8722D20AA080079E469 /* SpellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15FB8712D20AA080079E469 /* SpellView.swift */; };
+		C1E964C42D21DEFD003C75B3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E964C32D21DEFD003C75B3 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		C15FB86D2D20A5160079E469 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 		C15FB86F2D20A59E0079E469 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		C15FB8712D20AA080079E469 /* SpellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellView.swift; sourceTree = "<group>"; };
+		C1E964C32D21DEFD003C75B3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 				C15FB8712D20AA080079E469 /* SpellView.swift */,
 				C14149AA2D21D06C0001AC0F /* SpellIcon.swift */,
 				C14149AC2D21D3270001AC0F /* AllSpellsView.swift */,
+				C1E964C32D21DEFD003C75B3 /* MainView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C15FB8682D208D830079E469 /* StartView.swift in Sources */,
+				C1E964C42D21DEFD003C75B3 /* MainView.swift in Sources */,
 				C15FB8722D20AA080079E469 /* SpellView.swift in Sources */,
 				C15FB8702D20A59E0079E469 /* Colors.swift in Sources */,
 				C14149AB2D21D06C0001AC0F /* SpellIcon.swift in Sources */,
