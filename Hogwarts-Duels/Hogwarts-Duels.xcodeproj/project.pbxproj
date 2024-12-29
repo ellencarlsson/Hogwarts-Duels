@@ -16,6 +16,8 @@
 		C10C09AF2D208CB10046306D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10C09AE2D208CB10046306D /* ContentView.swift */; };
 		C10C09B12D208CB20046306D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C10C09B02D208CB20046306D /* Assets.xcassets */; };
 		C10C09B42D208CB20046306D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C10C09B32D208CB20046306D /* Preview Assets.xcassets */; };
+		C14149AB2D21D06C0001AC0F /* SpellIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14149AA2D21D06C0001AC0F /* SpellIcon.swift */; };
+		C14149AD2D21D3270001AC0F /* AllSpellsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14149AC2D21D3270001AC0F /* AllSpellsView.swift */; };
 		C15FB8682D208D830079E469 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15FB8672D208D830079E469 /* StartView.swift */; };
 		C15FB86A2D20A1B70079E469 /* uncanny.otf in Resources */ = {isa = PBXBuildFile; fileRef = C15FB8692D20A1B70079E469 /* uncanny.otf */; };
 		C15FB86E2D20A5160079E469 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15FB86D2D20A5160079E469 /* Buttons.swift */; };
@@ -58,6 +60,8 @@
 		C10C09AE2D208CB10046306D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C10C09B02D208CB20046306D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C10C09B32D208CB20046306D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C14149AA2D21D06C0001AC0F /* SpellIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellIcon.swift; sourceTree = "<group>"; };
+		C14149AC2D21D3270001AC0F /* AllSpellsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllSpellsView.swift; sourceTree = "<group>"; };
 		C15FB8672D208D830079E469 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		C15FB8692D20A1B70079E469 /* uncanny.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = uncanny.otf; sourceTree = "<group>"; };
 		C15FB86B2D20A25B0079E469 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -150,6 +154,8 @@
 				C15FB86D2D20A5160079E469 /* Buttons.swift */,
 				C15FB86F2D20A59E0079E469 /* Colors.swift */,
 				C15FB8712D20AA080079E469 /* SpellView.swift */,
+				C14149AA2D21D06C0001AC0F /* SpellIcon.swift */,
+				C14149AC2D21D3270001AC0F /* AllSpellsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -260,7 +266,9 @@
 				C15FB8682D208D830079E469 /* StartView.swift in Sources */,
 				C15FB8722D20AA080079E469 /* SpellView.swift in Sources */,
 				C15FB8702D20A59E0079E469 /* Colors.swift in Sources */,
+				C14149AB2D21D06C0001AC0F /* SpellIcon.swift in Sources */,
 				C10C099D2D208CAF0046306D /* ContentView.swift in Sources */,
+				C14149AD2D21D3270001AC0F /* AllSpellsView.swift in Sources */,
 				C10C099B2D208CAF0046306D /* Hogwarts_DuelsApp.swift in Sources */,
 				C15FB86E2D20A5160079E469 /* Buttons.swift in Sources */,
 			);
