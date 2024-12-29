@@ -7,97 +7,134 @@
 
 import SwiftUI
 
-struct Spell: Identifiable {
-    let id = UUID()
-    let name: String
-    let category: String
-    let energyCost: Int
-    let damage: Int
-    let cooldown: Int
-    let effect: String
-}
-
 struct SpellDetailView: View {
-    let spell: Spell
     
     var body: some View {
-        VStack(spacing: 20) {
-            // Namn och kategori
-            Text(spell.name)
-                .font(.largeTitle)
-                .bold()
-                .foregroundColor(.yellow)
-            
-            Text("Kategori: \(spell.category)")
-                .font(.title2)
-                .foregroundColor(.white.opacity(0.8))
-            
-            // Attribut som energikostnad, skada och cooldown
-            VStack(spacing: 10) {
-                HStack {
-                    Label("Energi", systemImage: "bolt.fill")
-                    Spacer()
-                    Text("\(spell.energyCost)")
-                }
-                .font(.title3)
-                .padding()
-                .background(Color.blue.opacity(0.3))
-                .cornerRadius(10)
-                
-                HStack {
-                    Label("Skada", systemImage: "flame.fill")
-                    Spacer()
-                    Text("\(spell.damage)")
-                }
-                .font(.title3)
-                .padding()
-                .background(Color.red.opacity(0.3))
-                .cornerRadius(10)
-                
-                HStack {
-                    Label("Cooldown", systemImage: "clock")
-                    Spacer()
-                    Text("\(spell.cooldown) sek")
-                }
-                .font(.title3)
-                .padding()
-                .background(Color.green.opacity(0.3))
-                .cornerRadius(10)
+        VStack() {
+            VStack {
+                Image("expelliarmus")
+                    .resizable()
+                        .scaledToFit()
+                    .frame(width: 300, height: 300)
+                Text("Expelliarmus")
+                    .font(.custom("uncanny", size: 60))
+                    .font(.largeTitle)
+                    .bold()
+                    .foregroundColor(.red)
             }
-            .foregroundColor(.white)
-            
-            // Effektbeskrivning
-            Text("Effekt: \(spell.effect)")
-                .font(.body)
-                .foregroundColor(.white)
-                .padding()
-                .background(Color.black.opacity(0.7))
-                .cornerRadius(10)
-            
-            Spacer()
-        }
-        .padding()
-        .background(
-            LinearGradient(
-                gradient: Gradient(colors: [Color.black, Color.purple]),
-                startPoint: .top,
-                endPoint: .bottom
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(
+                LinearGradient(
+                    gradient: Gradient(colors: [Color.red, Color.black]),
+                    startPoint: .top,
+                    endPoint: .bottom
+                )
+                .edgesIgnoringSafeArea(.all)
             )
-            .edgesIgnoringSafeArea(.all)
-        )
+            
+            VStack {
+                
+                
+                HStack {
+                    Image("attack")
+                        .resizable()
+                            .scaledToFit()
+                        .frame(width: 100, height: 100)
+                    
+                    /*Image("strategy")
+                        .resizable()
+                            .scaledToFit()
+                        .frame(width: 100, height: 100)
+                    
+                    Image("defense")
+                        .resizable()
+                            .scaledToFit()
+                        .frame(width: 100, height: 100)*/
+                }
+                
+                HStack {
+                    HStack {
+                        
+                        Image(systemName: "bolt.fill")
+                            .font(.system(size: 40))
+                            .shadow(color: .red, radius: 5, x: 0, y: 0)
+                            .foregroundColor(.red)
+
+                        Text("4")
+                            .foregroundColor(.white)
+                            .font(.custom("uncanny", size: 40))
+
+
+                    }
+                    .padding()
+                    Spacer()
+                    HStack {
+                        
+                        Image(systemName: "flame.fill")
+                            .font(.system(size: 40))
+                            .shadow(color: .red, radius: 5, x: 0, y: 0)
+                            .foregroundColor(.red)
+
+                        Text("4")
+                            .foregroundColor(.white)
+
+                            .font(.custom("uncanny", size: 40))
+                    }
+                    .foregroundColor(.red)
+                    .padding()
+                    Spacer()
+                    HStack {
+                        
+                        Image(systemName: "clock")
+                            .font(.system(size: 40))
+                            .shadow(color: .red, radius: 5, x: 0, y: 0)
+                            .foregroundColor(.red)
+
+                        Text("4")
+                            .foregroundColor(.white)
+
+                            .font(.custom("uncanny", size: 40))
+                    }
+                    .padding()
+                }
+                // Attribut som energikostnad, skada och cooldown
+                
+                
+                // Effektbeskrivning
+                VStack {
+                    HStack {
+                        Text("Effect:")
+                            .font(.custom("uncanny", size: 30))
+
+                            .foregroundColor(.white)
+                        Spacer()
+                    }
+                    HStack {
+                        Text("Disarms the opponent by causing their wand to fly out of their hand.")
+                            .font(.custom("uncanny", size: 30))
+                            .foregroundColor(.white)
+                            .background(Color.black.opacity(0.7))
+                            .cornerRadius(10)
+                        Spacer()
+                    }
+
+                    
+                }
+                
+            }
+            .padding()
+            .background(Color.black)
+            
+        }
+        .background(Color.black)
+       
+        
     }
 }
 
 #Preview  {
         
         
-    SpellDetailView(spell: Spell(
-        name: "Expelliarmus",
-        category: "Attack",
-        energyCost: 20,
-        damage: 10,
-        cooldown: 2,
-        effect: "Avväpnar motståndaren genom att få trollstaven att flyga ur handen."
-    ))
+    SpellDetailView()
     
 }
